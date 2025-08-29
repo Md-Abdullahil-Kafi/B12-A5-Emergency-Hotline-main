@@ -64,7 +64,7 @@ getId("main-content").addEventListener("click", function (event) {
       let number = serviceCard.querySelector(".Hot-Line").innerText;
       let title = serviceCard.querySelector(".card-title").innerText;
       alert(`
-           Successfully Called ${title} is ${number} Using Coin.
+           Calling ${title} is ${number} Using 20 Coin...
             `);
       // Call History Section
       historyItems.innerText = "";
@@ -96,7 +96,7 @@ getId("main-content").addEventListener("click", function (event) {
       let decress = availableCoin - 20;
       document.getElementById("availale-coin").innerText = decress;
     } else {
-      alert("Not Enough Coin.");
+      alert("Not Enough Coin.Minimum 20 Coin Need to call...");
       return;
     }
   }
